@@ -123,7 +123,7 @@ The badge is rendered as text with an icon. No `<img>` element exists at any poi
 
 1. **Inventory the hosts in use.** Identify the domains that legitimately serve images in assistant output for the deployment — documentation content delivery networks, internal asset hosts, and repository raw-content hosts are the usual cases.
 2. **Populate `allowedImageDomains`** in `customer-config.yaml` before or together with the upgrade, so that external images do not disappear for users in the interval between the two.
-3. **Apply the configuration change.** Follow the [Update Guide](../update/codemie/update-version.md) to roll out the modified ConfigMap.
+3. **Apply the configuration change.** Follow the [Update Guide](../update/codemie-platform/update-core-components.md) to roll out the modified ConfigMap.
 4. **Have users reload the application.** The customer configuration is fetched once per browser tab, so a tab that was already open continues to use the previously fetched list until it is reloaded.
 5. **Verify** as described below.
 
